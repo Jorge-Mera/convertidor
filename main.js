@@ -1,109 +1,34 @@
-/*
-function conversion (){
-    let dolar = 854;
-    let numero = prompt("introduce un numero a convertir de dolares a CLP");
-        do{
-            numero = prompt("introduce un numero a convertir de dolares a CLP");
-            alert("el valor es " + numero*dolar);
-        }while(numero = parseInt(numero)){
-            prompt("introduce un numero a convertir de dolares a CLP");
-            numero++;
-        };
+
+//objectos
+let paises = [
+  {nombre: "Argentina", precio: 0.40},
+  {nombre: "Mexico", precio: 0.019},
+  {nombre: "Peru", precio: 238},
+  {nombre: "Estados Unidos", precio: 887},
+];
+
+let pregunta = prompt("¿Desea convertir CLP a algún país?")
+
+while(pregunta != "si" && pregunta != "no"){
+  alert("por favor introducta una de las repuesta SI o NO");
+  pregunta = prompt("¿desea convertir dinero de CLP a un pais?");
 }
 
 
-function conversion (){
-    let dolar = 854;
-    let numero = prompt("introduce un numero a convertir de dolares a CLP");
-    if(!isNaN (numero) && numero>0){
-        alert("el valor es 0");
-    }
-    else(numero!=NaN){
-        alert("error en el ingreso");
-    }
-}*/
-
-
-
-/*
-
-function resultadoConversion(){
-    let veces = parseInt(prompt("cuantas veces convertiremos?"));
-    let numeroConvertir = parseInt(prompt("cuanto quieres convertir?"));
-    let dolar = 850;
-
-    for (let i = 0; i<=veces; i++){
-        let total = numeroConvertir*i;
-        console.log("el valor total es: " + numeroConvertir*dolar);
-        if(numeroConvertir=NaN){
-            console.log("hay un error");
-        }else if(numeroConvertir=0){
-            console.log("el resultado es obvio es: 0")
-        }else{
-            console.log("el total es: " + total);
-        }
-    }
+if(pregunta == "si"){
+  alert("esta es la lista de paises a convertir");
+  //funcion de orden superior
+  let todosLosPaises = paises.map(
+    (pais) => pais.nombre + " " + "$" + pais.precio);
+  //array
+    alert(todosLosPaises.join(" - "))
+}else if (pregunta == "no"){
+  alert("gracias");
 }
 
-resultadoConversion();
-
-*/
-
-
-/*
-let dolar = 850;
-  
-while(numero = parseInt(numero));
-        console.log(numero*dolar);
-       // if(numero=prompt(""))
-    //if(numero = 0){
-
-
-              switch (numero){
-            case Number:
-                console.log(numero*dolar);
-             break;
-            case 0:
-                console.log("es un resultado logico ¿no? es 0");
-             break;
-            case "":
-                console.log("debe introducir un numero");
-             break;
-            default:
-                console.log("se a encontrado un error");
-             break;
-        }
-        numero = prompt("introduce un numero a convertir de dolares a CLP");
-
-        */
-   // }
-
-/*
-function conversion() {
-    
-  
-const dolar = 854;
-do{
-   let numero = prompt("introduce un numero a convertir de dolares a CLP");
-    console.log(numero*dolar);
-}while (parseInt(numero));
-
-if(numero = prompt("")){
-    alert("debe introducir un numero");
-if(numero == 0){
-    console.log("es un resultado logico ¿no? es 0")
-}};
-};
-
-conversion();
-
-*/
-
-
-
+let pregunta2 = prompt("¿que pais desea seleccionar?");
 
 function conversion() { //funcion
-    const dolar = 854;
     let numero = prompt("introduce un numero a convertir de dolares a CLP");
 
     //condicionales
@@ -117,12 +42,15 @@ function conversion() { //funcion
 
     //ciclo
       do {
-        console.log("La conversión es $" + numero*dolar);
+        console.log("La conversión es $" + numero);
       } while (numero == parseInt(Number));
     }
   };
 
 conversion();
+
+
+
 
 
 
