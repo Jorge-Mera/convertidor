@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/06b7b8a60d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair:ital,wght@1,400;1,600&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <title>Proyecto JavaScript</title>
 </head>
 <body>
+    <header>
+        <h1>Conversor De Divisas Chilenas</h1>
+    </header>
+    <main>
+      <div>
+       
+            <form class="form">
+              <h2>Selecciona un país</h2>
+            <p type="Acción:"></p>
 
+            <p type="Moneda:"><select id="moneda">
+                <option value="a" >Argentina</option>
+                <option value="b" >Mexico</option>
+                <option value="c" >Perú</option>
+                <option value="d" >Estados Unidos</option>
+            </select></p>
+            <p type="Monto:"><input type="number" id="monto" name="monto" ></input></p>
+            <button class="monto" onclick="calcular()">Calcular</button> <br>
+            <h6 id="resultado">resultado:$0.00 </h6>
+            </form>
+</div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
